@@ -44,7 +44,7 @@ python3 {baseDir}/scripts/twitter_engagement_client.py list-tweets --user "@elon
 python3 {baseDir}/scripts/twitter_engagement_client.py like-latest --user "@elonmusk"
 python3 {baseDir}/scripts/twitter_engagement_client.py unlike-latest --user "@elonmusk"
 
-# Like or unlike a tweet ID already resolved by OpenClaw context
+# Like or unlike a tweet ID already resolved by the current conversation context
 python3 {baseDir}/scripts/twitter_engagement_client.py like-tweet --tweet-id "2040901249466593766" --label "Tweet #2" --username "elonmusk"
 python3 {baseDir}/scripts/twitter_engagement_client.py unlike-tweet --tweet-id "2040901249466593766" --label "Tweet #5"
 
@@ -52,7 +52,7 @@ python3 {baseDir}/scripts/twitter_engagement_client.py unlike-tweet --tweet-id "
 python3 {baseDir}/scripts/twitter_engagement_client.py follow-user --user "@elonmusk"
 python3 {baseDir}/scripts/twitter_engagement_client.py unfollow-user --user "@elonmusk"
 
-# Follow or unfollow a user ID already resolved by OpenClaw context
+# Follow or unfollow a user ID already resolved by the current conversation context
 python3 {baseDir}/scripts/twitter_engagement_client.py follow-user-id --target-user-id "44196397" --username "elonmusk"
 python3 {baseDir}/scripts/twitter_engagement_client.py unfollow-user-id --target-user-id "44196397" --username "elonmusk"
 ```

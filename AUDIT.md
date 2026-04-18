@@ -79,7 +79,6 @@
 - Category: `ai`
 - Path: `hermes-release/ai/cn-llm`
 - Description: China LLM Gateway - Unified interface for Chinese LLMs including Qwen, DeepSeek, GLM, Baichuan. OpenAI compatible, one API Key for all models. Use when: the user needs model routing, provider setup, or Chinese LLM access guidance.
-- Change: rewrote 1 markdown file(s) to reduce OpenClaw-specific release wording
 - Change: replaced source README with a Hermes-oriented release README
 
 ## last30days
@@ -122,7 +121,6 @@
 - Category: `finance`
 - Path: `hermes-release/finance/marketpulse`
 - Description: Query real-time and historical financial data across equities and crypto—prices, market moves, metrics, and trends for analysis, alerts, and reporting. Use when: the user needs market data, stock analysis, watchlists, or portfolio workflows.
-- Change: rewrote 1 markdown file(s) to reduce OpenClaw-specific release wording
 - Change: replaced source README with a Hermes-oriented release README
 
 ## media-gen
@@ -346,7 +344,6 @@
 - Path: `hermes-release/communication/twitter-command-center-search-post`
 - Description: Searches and reads X (Twitter): profiles, timelines, mentions, followers, tweet search, trends, lists, communities, and Spaces. Publishes posts after the user completes OAuth in the browser. Use when the user asks about Twitter/X data, social listening, or posting without sharing account passwords.
 - Change: disabled browser auto-open in scripts/twitter_oauth_client.py
-- Change: rewrote 2 markdown file(s) to reduce OpenClaw-specific release wording
 - Change: replaced source README with a Hermes-oriented release README
 
 ## twitter-command-center-search-post-interact
@@ -355,7 +352,6 @@
 - Path: `hermes-release/communication/twitter-command-center-search-post-interact`
 - Description: Searches and reads X (Twitter): profiles, timelines, mentions, followers, tweet search, trends, lists, communities, and Spaces. Publishes posts, likes/unlikes tweets, and follows/unfollows users after the user completes OAuth in the browser. Use when the user asks about Twitter/X data, social listening, posting, or interacting with tweets/users without sharing account passwords.
 - Change: disabled browser auto-open in scripts/twitter_oauth_client.py
-- Change: rewrote 3 markdown file(s) to reduce OpenClaw-specific release wording
 - Change: replaced source README with a Hermes-oriented release README
 
 ## us-stock-analyst

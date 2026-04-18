@@ -85,7 +85,7 @@ Recommended flow:
 
 ### Attachment Flow
 
-When the user provides image/video files in the current workspace:
+When the user provides image or video files in the current workspace:
 
 1. The runtime stores the attachment in the local workspace and provides the workspace file path to the skill.
 2. The skill passes that local path through `--media-file <workspace_path>`.

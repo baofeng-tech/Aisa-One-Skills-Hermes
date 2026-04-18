@@ -108,7 +108,6 @@
       "description": "China LLM Gateway - Unified interface for Chinese LLMs including Qwen, DeepSeek, GLM, Baichuan. OpenAI compatible, one API Key for all models. Use when: the user needs model routing, provider setup, or Chinese LLM access guidance.",
       "residual_risks": [],
       "changes": [
-        "rewrote 1 markdown file(s) to reduce OpenClaw-specific release wording",
         "replaced source README with a Hermes-oriented release README"
       ]
     },
@@ -166,7 +165,6 @@
       "description": "Query real-time and historical financial data across equities and crypto—prices, market moves, metrics, and trends for analysis, alerts, and reporting. Use when: the user needs market data, stock analysis, watchlists, or portfolio workflows.",
       "residual_risks": [],
       "changes": [
-        "rewrote 1 markdown file(s) to reduce OpenClaw-specific release wording",
         "replaced source README with a Hermes-oriented release README"
       ]
     },
@@ -480,7 +478,6 @@
       "residual_risks": [],
       "changes": [
         "disabled browser auto-open in scripts/twitter_oauth_client.py",
-        "rewrote 2 markdown file(s) to reduce OpenClaw-specific release wording",
         "replaced source README with a Hermes-oriented release README"
       ]
     },
@@ -492,7 +489,6 @@
       "residual_risks": [],
       "changes": [
         "disabled browser auto-open in scripts/twitter_oauth_client.py",
-        "rewrote 3 markdown file(s) to reduce OpenClaw-specific release wording",
         "replaced source README with a Hermes-oriented release README"
       ]
     },

@@ -17,9 +17,7 @@ required_environment_variables:
   required_for: AIsa-backed API access
 ---
 
-> Release note: This package is published for Hermes. References to OpenClaw below describe the original source workflow, a companion runtime, or compatibility guidance unless the skill is explicitly about OpenClaw itself.
-
-# CN-LLM 🐉
+# AIsa CN-LLM 🐉
 
 **China LLM Unified Gateway. Powered by AIsa.**
 
