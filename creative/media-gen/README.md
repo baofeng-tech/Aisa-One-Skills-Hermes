@@ -1,45 +1,19 @@
-## AIsa Media Gen
+# AIsa Media Gen
 
-Generate images and videos using the AIsa API:
+Release-ready Hermes skill package generated from `targetSkills/media-gen`.
 
-- **Gemini Image**: `gemini-3-pro-image-preview` (`/v1/models/{model}:generateContent`)
-- **Wan 2.6 Video**: `wan2.6-t2v` (`/apis/v1/services/aigc/...` async task + polling)
+- Skill name: `aisa-media-gen`
+- Entry point: `SKILL.md`
+- Runtime assets: `scripts/`, `references/`, `assets/` when present
 
-API documentation index: [`https://docs.aisa.one/reference/`](https://docs.aisa.one/reference/)
+## Notes
 
-### Quick Start
+- Generate images & videos with AIsa. Gemini 3 Pro Image (image) + Qwen Wan 2.6 (video) via one API key. Use when: the user needs AI image or video generation workflows.
+- This README is release-specific and replaces source READMEs that were written for other runtimes.
+- If the underlying instructions mention OpenClaw, treat that as source-context or compatibility guidance unless the skill is specifically about OpenClaw setup.
 
-```bash
-export AISA_API_KEY="your-key"
-```
+## Quick Start
 
-### Generate Image
-
-```bash
-python scripts/media_gen_client.py image \
-  --prompt "A cute red panda, cinematic lighting" \
-  --out out.png
-```
-
-### Generate Video (Create Task + Polling)
-
-```bash
-python scripts/media_gen_client.py video-create \
-  --prompt "cinematic close-up, slow push-in" \
-  --img-url "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/320px-Cat03.jpg" \
-  --duration 5
-
-python scripts/media_gen_client.py video-wait \
-  --task-id <task_id> \
-  --poll 10 \
-  --timeout 600
-```
-
-### Auto-download Generated Video (mp4)
-
-```bash
-python scripts/media_gen_client.py video-wait \
-  --task-id <task_id> \
-  --download \
-  --out out.mp4
-```
+1. Open `SKILL.md` to review invocation guidance and runtime requirements.
+2. Set any required environment variables before running bundled scripts.
+3. Use repo-relative paths like `python3 scripts/...` when following command examples.

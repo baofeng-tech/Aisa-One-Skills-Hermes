@@ -1,33 +1,19 @@
 # AIsa Search
 
-Intelligent search for autonomous agents with structured retrieval plus Perplexity Sonar answer endpoints.
+Release-ready Hermes skill package generated from `targetSkills/search`.
 
-## Features
-
-- Web search
-- Scholar search
-- Hybrid scholar search
-- Perplexity Sonar, Sonar Pro, Sonar Reasoning Pro, and Sonar Deep Research
-- Tavily integration
-- Verity-style multi-source retrieval
-
-## Quick Start
-
-```bash
-export AISA_API_KEY="your-key"
-
-python scripts/search_client.py web --query "AI frameworks"
-python scripts/search_client.py scholar --query "transformer models"
-python scripts/search_client.py sonar --query "What changed in AI this week?"
-python scripts/search_client.py sonar-pro --query "Compare coding agents with citations"
-python scripts/search_client.py verity --query "Is quantum computing enterprise-ready?"
-```
+- Skill name: `aisa-search`
+- Entry point: `SKILL.md`
+- Runtime assets: `scripts/`, `references/`, `assets/` when present
 
 ## Notes
 
-- Deprecated `/search/full` and `/search/smart` nodes were removed from this skill.
-- Perplexity endpoints are now the recommended answer-generation path.
+- Intelligent search for agents. Multi-source retrieval across web, scholar, Tavily, and Perplexity Sonar models. Use when: the user needs web search, research, source discovery, or content extraction.
+- This README is release-specific and replaces source READMEs that were written for other runtimes.
+- If the underlying instructions mention OpenClaw, treat that as source-context or compatibility guidance unless the skill is specifically about OpenClaw setup.
 
-## Documentation
+## Quick Start
 
-See [SKILL.md](SKILL.md) for full usage and examples.
+1. Open `SKILL.md` to review invocation guidance and runtime requirements.
+2. Set any required environment variables before running bundled scripts.
+3. Use repo-relative paths like `python3 scripts/...` when following command examples.

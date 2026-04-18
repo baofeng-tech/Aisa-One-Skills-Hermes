@@ -22,7 +22,9 @@ required_environment_variables:
   required_for: AIsa-backed API access
 ---
 
-# OpenClaw YouTube SERP Scout
+> Release note: This package is published for Hermes. References to OpenClaw below describe the original source workflow, a companion runtime, or compatibility guidance unless the skill is explicitly about OpenClaw itself.
+
+# YouTube SERP Scout
 
 Runtime-focused release bundle for YouTube search, competitor tracking, and trend discovery through the AISA relay.
 

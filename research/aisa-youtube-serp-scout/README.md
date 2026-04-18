@@ -1,35 +1,19 @@
-# AIsa YouTube SERP Scout
+# AIsa Youtube Serp Scout
 
-Cross-platform YouTube research skill for AgentSkills-compatible clients.
+Release-ready Hermes skill package generated from `targetSkills/aisa-youtube-serp-scout`.
 
-## What it does
+- Skill name: `aisa-youtube-serp-scout`
+- Entry point: `SKILL.md`
+- Runtime assets: `scripts/`, `references/`, `assets/` when present
 
-- Search YouTube videos, channels, and trends through the AIsa relay
-- Use the bundled Python client for repeatable research workflows
-- Support content research, competitor tracking, and trend discovery
+## Notes
 
-## Setup
+- Search YouTube videos, channels, and trends through the AIsa YouTube SERP client. Use when the user asks for content research, competitor tracking, or trend discovery without managing Google credentials.
+- This README is release-specific and replaces source READMEs that were written for other runtimes.
+- If the underlying instructions mention OpenClaw, treat that as source-context or compatibility guidance unless the skill is specifically about OpenClaw setup.
 
-```bash
-export AISA_API_KEY="your-key"
-```
+## Quick Start
 
-Requires:
-
-- `python3`
-- `curl`
-- network access to `https://api.aisa.one/apis/v1/youtube/search`
-
-## Common Commands
-
-```bash
-python3 scripts/youtube_client.py search --query "AI agents tutorial"
-python3 scripts/youtube_client.py competitor --name "OpenAI" --topic "GPT tutorial"
-```
-
-## Platform Notes
-
-- AgentSkills: standard `SKILL.md + scripts/` structure.
-- OpenClaw: keeps OpenClaw metadata hints without changing the cross-platform body.
-- Hermes: fits naturally into a research category.
-- Claude Code: can use the same package as a standalone skill.
+1. Open `SKILL.md` to review invocation guidance and runtime requirements.
+2. Set any required environment variables before running bundled scripts.
+3. Use repo-relative paths like `python3 scripts/...` when following command examples.

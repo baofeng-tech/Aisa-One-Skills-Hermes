@@ -1,57 +1,19 @@
 # AIsa Twitter Command Center
 
-Cross-platform Twitter/X research and posting skill for AgentSkills-compatible clients.
+Release-ready Hermes skill package generated from `targetSkills/aisa-twitter-command-center`.
 
-## What it does
+- Skill name: `aisa-twitter-command-center`
+- Entry point: `SKILL.md`
+- Runtime assets: `scripts/`, `references/`, `assets/` when present
 
-- Search Twitter/X profiles, tweets, trends, lists, communities, and Spaces
-- Inspect timelines, mentions, replies, quotes, and thread context
-- Support approved posting workflows through OAuth
-- Reuse the same skill package across OpenClaw, Hermes, Claude Code, and other compatible runtimes
+## Notes
 
-## Directory Layout
+- Search X/Twitter profiles, tweets, trends, lists, communities, and Spaces through the AIsa relay, then support approved posting workflows with OAuth. Use when the user asks for Twitter research, monitoring, or posting without sharing passwords.
+- This README is release-specific and replaces source READMEs that were written for other runtimes.
+- If the underlying instructions mention OpenClaw, treat that as source-context or compatibility guidance unless the skill is specifically about OpenClaw setup.
 
-```text
-aisa-twitter-command-center/
-├── SKILL.md
-├── README.md
-├── scripts/
-│   ├── twitter_client.py
-│   └── twitter_oauth_client.py
-└── references/
-    └── post_twitter.md
-```
+## Quick Start
 
-## Setup
-
-```bash
-export AISA_API_KEY="your-key"
-```
-
-Requires:
-
-- `python3`
-- network access to `https://api.aisa.one/apis/v1/...`
-
-## Common Commands
-
-```bash
-python3 scripts/twitter_client.py user-info --username elonmusk
-python3 scripts/twitter_client.py search --query "AI agents" --type Latest
-python3 scripts/twitter_oauth_client.py status
-python3 scripts/twitter_oauth_client.py authorize
-python3 scripts/twitter_oauth_client.py post --text "Hello from AIsa"
-```
-
-## Platform Notes
-
-- AgentSkills: the package follows the standard `SKILL.md + scripts + references` structure.
-- OpenClaw: `metadata.openclaw` is included for environment and runtime hints.
-- Hermes: the skill can be used as-is, with optional categorization in a Hermes skill tree.
-- Claude Code: the skill can run standalone, or be wrapped into a plugin marketplace package for distribution.
-
-## Security Notes
-
-- Requests, OAuth operations, and approved media uploads go to `api.aisa.one`.
-- The skill requires `AISA_API_KEY`.
-- The workflow is designed to avoid direct password sharing and browser-cookie extraction.
+1. Open `SKILL.md` to review invocation guidance and runtime requirements.
+2. Set any required environment variables before running bundled scripts.
+3. Use repo-relative paths like `python3 scripts/...` when following command examples.

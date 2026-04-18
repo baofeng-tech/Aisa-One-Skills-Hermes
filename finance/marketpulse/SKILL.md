@@ -1,7 +1,7 @@
 ---
 name: marketpulse
 description: 'Query real-time and historical financial data across equities and crypto—prices, market moves, metrics, and trends for analysis, alerts, and reporting. Use when: the user needs market data, stock analysis, watchlists, or portfolio workflows.'
-homepage: https://openclaw.ai
+homepage: https://aisa.one
 metadata:
   hermes:
     tags:
@@ -18,7 +18,9 @@ required_environment_variables:
   required_for: AIsa-backed API access
 ---
 
-# OpenClaw Market 📊
+> Release note: This package is published for Hermes. References to OpenClaw below describe the original source workflow, a companion runtime, or compatibility guidance unless the skill is explicitly about OpenClaw itself.
+
+# Market 📊
 
 **Complete market data for autonomous agents. Powered by AIsa.**
 

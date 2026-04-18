@@ -1,7 +1,7 @@
 ---
 name: openclaw-search
 description: 'Intelligent search for agents. Multi-source retrieval with confidence scoring - web, academic, and Tavily in one unified API. Use when: the user needs web search, research, source discovery, or content extraction.'
-homepage: https://openclaw.ai
+homepage: https://aisa.one
 metadata:
   hermes:
     tags:
@@ -18,7 +18,9 @@ required_environment_variables:
   required_for: AIsa-backed API access
 ---
 
-# OpenClaw Search 🔍
+> Release note: This package is published for Hermes. References to OpenClaw below describe the original source workflow, a companion runtime, or compatibility guidance unless the skill is explicitly about OpenClaw itself.
+
+# Search 🔍
 
 **Intelligent search for autonomous agents. Powered by AIsa.**
 

@@ -1,25 +1,19 @@
-# last30days-zh
+# Last30days Zh
 
-中文 ClawHub 发布包。
+Release-ready Hermes skill package generated from `targetSkills/last30days-zh`.
 
-包含：
+- Skill name: `last30days-zh`
+- Entry point: `SKILL.md`
+- Runtime assets: `scripts/`, `references/`, `assets/` when present
 
-- 运行时脚本
-- 中文 `SKILL.md`
-- `.codex-plugin/plugin.json`
-- 许可证和包元数据
+## Notes
 
-刻意不包含：
+- 聚合最近 30 天的 Reddit、X/Twitter、YouTube、TikTok、Instagram、Hacker News、Polymarket、GitHub 和 web search 结果。触发条件：当用户需要 recent social research、人物近况、公司动态、竞品对比、发布反应、趋势扫描时使用。支持 AISA 规划、聚类、重排和 JSON 输出。
+- This README is release-specific and replaces source READMEs that were written for other runtimes.
+- If the underlying instructions mention OpenClaw, treat that as source-context or compatibility guidance unless the skill is specifically about OpenClaw setup.
 
-- tests
-- 历史文档
-- hooks
-- fixtures
-- Gemini 扩展元数据
+## Quick Start
 
-运行时摘要：
-
-- `AISA_API_KEY` 提供规划、重排、综合、X/Twitter、YouTube、Polymarket 和 grounded web search。
-- Reddit 与 Hacker News 走公开路径。
-- GitHub 仍走官方 GitHub API 路径，需要时再配置 `GH_TOKEN` 或 `GITHUB_TOKEN`。
-
+1. Open `SKILL.md` to review invocation guidance and runtime requirements.
+2. Set any required environment variables before running bundled scripts.
+3. Use repo-relative paths like `python3 scripts/...` when following command examples.

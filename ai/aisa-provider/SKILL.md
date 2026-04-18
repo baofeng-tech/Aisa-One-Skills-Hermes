@@ -17,6 +17,8 @@ required_environment_variables:
   required_for: AIsa-backed API access
 ---
 
+> Release note: This package is published for Hermes. References to OpenClaw below describe the original source workflow, a companion runtime, or compatibility guidance unless the skill is explicitly about OpenClaw itself.
+
 # AIsa Provider for OpenClaw
 
 AIsa is a unified API gateway providing production access to China's leading AI models through official partnerships with all major Chinese AI platforms. It is an Alibaba Cloud Qwen Key Account partner, offering the full Qwen model family at discounted pricing, plus models on the Alibaba Bailian aggregation platform (DeepSeek, Kimi, GLM).
@@ -33,7 +35,7 @@ AIsa also provides access to **Kimi K2.5** (Moonshot AI's flagship reasoning mod
 export AISA_API_KEY="your-key-here"
 ```
 
-OpenClaw auto-detects `AISA_API_KEY` and registers AIsa as a provider. No config file changes needed.
+If your runtime supports provider auto-discovery, `AISA_API_KEY` may be enough. Otherwise use the explicit config examples below.
 
 ### Option 2: Interactive Onboarding
 

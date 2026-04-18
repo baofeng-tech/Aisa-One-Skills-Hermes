@@ -1,34 +1,19 @@
-# AIsa YouTube Search
+# AIsa Youtube Search
 
-Cross-platform YouTube discovery skill for AgentSkills-compatible clients.
+Release-ready Hermes skill package generated from `targetSkills/aisa-youtube-search`.
 
-## What it does
+- Skill name: `aisa-youtube-search`
+- Entry point: `SKILL.md`
+- Runtime assets: `scripts/`, `references/`, `assets/` when present
 
-- Search YouTube videos, channels, and playlists through the AIsa relay
-- Apply locale and filter parameters without managing Google credentials
-- Use simple `curl` requests for lightweight research workflows
+## Notes
 
-## Setup
+- Search YouTube videos, channels, and playlists through the AIsa YouTube relay with one API key. Use when the user asks for YouTube discovery, query expansion, or pagination without managing Google credentials.
+- This README is release-specific and replaces source READMEs that were written for other runtimes.
+- If the underlying instructions mention OpenClaw, treat that as source-context or compatibility guidance unless the skill is specifically about OpenClaw setup.
 
-```bash
-export AISA_API_KEY="your-key"
-```
+## Quick Start
 
-Requires:
-
-- `curl`
-- network access to `https://api.aisa.one/apis/v1/youtube/search`
-
-## Common Commands
-
-```bash
-curl -s "https://api.aisa.one/apis/v1/youtube/search?engine=youtube&q=machine+learning+tutorial" \
-  -H "Authorization: Bearer $AISA_API_KEY"
-```
-
-## Platform Notes
-
-- AgentSkills: lightweight `SKILL.md`-only package with curl-based examples.
-- OpenClaw: `metadata.openclaw` includes environment and binary hints.
-- Hermes: can be categorized under research or media skills.
-- Claude Code: works as a standalone skill, or can be wrapped in a plugin later.
+1. Open `SKILL.md` to review invocation guidance and runtime requirements.
+2. Set any required environment variables before running bundled scripts.
+3. Use repo-relative paths like `python3 scripts/...` when following command examples.

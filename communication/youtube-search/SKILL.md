@@ -22,6 +22,8 @@ required_environment_variables:
   required_for: AIsa-backed API access
 ---
 
+> Release note: This package is published for Hermes. References to OpenClaw below describe the original source workflow, a companion runtime, or compatibility guidance unless the skill is explicitly about OpenClaw itself.
+
 # YouTube Search (via AIsa)
 
 Search YouTube videos, channels, and playlists through AIsa's unified API. No Google API key or OAuth setup needed — just your AIsa API key.

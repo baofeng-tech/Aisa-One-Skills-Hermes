@@ -27,6 +27,8 @@ required_environment_variables:
   required_for: AIsa-backed API access
 ---
 
+> Release note: This package is published for Hermes. References to OpenClaw below describe the original source workflow, a companion runtime, or compatibility guidance unless the skill is explicitly about OpenClaw itself.
+
 # last30days 中文版
 
 聚合最近 30 天的社交平台、社区论坛、预测市场、GitHub 和 grounded web 结果，再合成为一份研究简报。

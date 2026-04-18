@@ -1,30 +1,19 @@
-# MarketPulse (Stocks + Crypto Data) 📊
+# AIsa Market
 
-Query real-time and historical financial data across equities and crypto—prices, market moves, metrics, and trends for analysis, alerts, and reporting.
+Release-ready Hermes skill package generated from `targetSkills/market`.
 
-## Features
+- Skill name: `aisa-market`
+- Entry point: `SKILL.md`
+- Runtime assets: `scripts/`, `references/`, `assets/` when present
 
-- **Stock Data**: Historical prices, real-time quotes
-- **Company News**: Latest news by ticker
-- **Financial Statements**: Income, balance sheets, cash flow
-- **Analyst Estimates**: EPS forecasts, recommendations
-- **Insider Trading**: Track insider transactions
-- **SEC Filings**: 10-K, 10-Q, 8-K and more
-- **Crypto Data**: Real-time prices, historical OHLCV
-- **Stock Screener**: Filter by metrics
+## Notes
+
+- Query real-time and historical financial data across equities and crypto—prices, market moves, metrics, and trends for analysis, alerts, and reporting. Use when: the user needs market data, stock analysis, watchlists, or portfolio workflows.
+- This README is release-specific and replaces source READMEs that were written for other runtimes.
+- If the underlying instructions mention OpenClaw, treat that as source-context or compatibility guidance unless the skill is specifically about OpenClaw setup.
 
 ## Quick Start
 
-```bash
-export AISA_API_KEY="your-key"
-
-# Stock data
-python scripts/market_client.py stock prices --ticker AAPL
-
-# Crypto data
-python scripts/market_client.py crypto snapshot --symbol BTC
-```
-
-## Documentation
-
-See [SKILL.md](SKILL.md) for complete API documentation.
+1. Open `SKILL.md` to review invocation guidance and runtime requirements.
+2. Set any required environment variables before running bundled scripts.
+3. Use repo-relative paths like `python3 scripts/...` when following command examples.

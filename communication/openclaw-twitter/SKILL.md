@@ -2,7 +2,7 @@
 name: openclaw-twitter
 description: 'Search X/Twitter profiles, tweets, trends, lists, communities, and Spaces through the AISA relay, then publish approved posts with OAuth. Use when: the user asks for Twitter/X research, monitoring, or posting without sharing passwords. Supports read APIs, authorization links, and media-aware posting.'
 author: 0xjordansg-yolo
-homepage: https://openclaw.ai
+homepage: https://aisa.one
 metadata:
   hermes:
     tags:
@@ -22,7 +22,9 @@ required_environment_variables:
   required_for: AIsa-backed API access
 ---
 
-# OpenClaw Twitter
+> Release note: This package is published for Hermes. References to OpenClaw below describe the original source workflow, a companion runtime, or compatibility guidance unless the skill is explicitly about OpenClaw itself.
+
+# Twitter
 
 Runtime-focused release bundle for Twitter/X search and posting through the AISA relay.
 
@@ -67,7 +69,7 @@ python3 scripts/twitter_client.py search --query "AI agents" --type Latest
 python3 scripts/twitter_client.py trends --woeid 1
 python3 scripts/twitter_oauth_client.py status
 python3 scripts/twitter_oauth_client.py authorize
-python3 scripts/twitter_oauth_client.py post --text "Hello from OpenClaw"
+python3 scripts/twitter_oauth_client.py post --text "Hello from AIsa"
 ```
 
 ## Posting Workflow
@@ -86,7 +88,7 @@ These points summarize the common reasons similar skills are marked `Suspicious`
 - The package is API-key-first: it requires `AISA_API_KEY` and does not ask for passwords, cookies, `CT0`, or other legacy secrets.
 - The release bundle is runtime-only: it keeps `SKILL.md`, `scripts/`, and the posting reference, while omitting non-runtime files such as `README.md` and `_meta.json`.
 - The package does not include cache sync, self-install logic, home-directory persistence, browser-cookie extraction, or external agent CLI wrappers.
-- Browser opening is optional and not the default workflow; returning the authorization link is the preferred path for OpenClaw.
+- Browser opening is optional and not the default workflow; returning the authorization link is the preferred path for this release.
 
 ## Release Bundle Notes
 

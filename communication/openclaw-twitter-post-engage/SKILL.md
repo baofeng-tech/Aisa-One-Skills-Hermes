@@ -2,7 +2,7 @@
 name: openclaw-twitter-post-engage
 description: 'Search X/Twitter profiles, tweets, trends, and approved engagement actions through the AISA relay. Use when: the user asks for Twitter/X research, posting, likes, follows, or related workflows without sharing passwords. Supports read APIs, OAuth-gated posting, and follow or like operations.'
 author: aisadocs
-homepage: https://openclaw.ai
+homepage: https://aisa.one
 metadata:
   hermes:
     tags:
@@ -22,7 +22,9 @@ required_environment_variables:
   required_for: AIsa-backed API access
 ---
 
-# OpenClaw Twitter Post Engage
+> Release note: This package is published for Hermes. References to OpenClaw below describe the original source workflow, a companion runtime, or compatibility guidance unless the skill is explicitly about OpenClaw itself.
+
+# Twitter Post Engage
 
 Runtime-focused release bundle for Twitter/X search, posting, and engagement through the AISA relay.
 
@@ -59,14 +61,14 @@ All network calls go to `https://api.aisa.one/apis/v1/...`.
 - Read user, tweet, trend, list, community, and Spaces data.
 - Publish text, image, and video posts after explicit OAuth approval.
 - Like, unlike, follow, and unfollow through the engagement client once authorization exists.
-- Reuse OpenClaw context instead of local file-based conversation persistence.
+- Reuse the current conversation context instead of local file-based conversation persistence.
 
 ## Common Commands
 
 ```bash
 python3 scripts/twitter_client.py search --query "AI agents" --type Latest
 python3 scripts/twitter_oauth_client.py authorize
-python3 scripts/twitter_oauth_client.py post --text "Hello from OpenClaw"
+python3 scripts/twitter_oauth_client.py post --text "Hello from AIsa"
 python3 scripts/twitter_engagement_client.py like-latest --user "@elonmusk"
 python3 scripts/twitter_engagement_client.py follow-user --user "@elonmusk"
 ```
@@ -85,7 +87,7 @@ These points summarize the common reasons similar skills are marked `Suspicious`
 - The package is API-key-first: it requires `AISA_API_KEY` and does not ask for passwords, cookies, `CT0`, or other legacy secrets.
 - The release bundle is runtime-only: it keeps `SKILL.md`, `scripts/`, and the required references, while omitting non-runtime files such as `README.md` and `_meta.json`.
 - The package does not include cache sync, self-install logic, home-directory persistence, browser-cookie extraction, or external agent CLI wrappers.
-- Browser opening is optional and not the default workflow; returning the authorization link is the preferred path for OpenClaw.
+- Browser opening is optional and not the default workflow; returning the authorization link is the preferred path for this release.
 
 ## Release Bundle Notes
 

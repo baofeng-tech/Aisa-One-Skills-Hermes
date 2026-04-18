@@ -1,40 +1,19 @@
-# OpenClaw YouTube 📺
+# Openclaw Youtube
 
-YouTube SERP Scout for autonomous agents. Search top-ranking videos, channels, and trends.
+Release-ready Hermes skill package generated from `targetSkills/openclaw-youtube`.
 
-## Features
+- Skill name: `openclaw-youtube`
+- Entry point: `SKILL.md`
+- Runtime assets: `scripts/`, `references/`, `assets/` when present
 
-- **SERP Search**: Find top-ranking videos for any query
-- **Country/Language Filters**: Target specific regions
-- **Competitor Research**: Track competitor content
-- **Trend Discovery**: Find what's popular now
+## Notes
+
+- YouTube SERP Scout for agents. Search top-ranking videos, channels, and trends for content research and competitor tracking. Use when: the user needs YouTube search, trend discovery, channel research, or SERP analysis.
+- This README is release-specific and replaces source READMEs that were written for other runtimes.
+- If the underlying instructions mention OpenClaw, treat that as source-context or compatibility guidance unless the skill is specifically about OpenClaw setup.
 
 ## Quick Start
 
-```bash
-export AISA_API_KEY="your-key"
-
-# Basic search
-python scripts/youtube_client.py search --query "AI agents tutorial"
-
-# Search with country filter
-python scripts/youtube_client.py search --query "machine learning" --country us
-
-# Find top videos
-python scripts/youtube_client.py top-videos --query "GPT-5" --count 10
-
-# Competitor research
-python scripts/youtube_client.py competitor --name "OpenAI" --topic "tutorial"
-```
-
-## Use Cases
-
-1. **Content Research** - Find what's ranking to plan your content
-2. **Competitor Tracking** - Monitor competitor YouTube presence
-3. **Trend Discovery** - Identify trending topics
-4. **Keyword Research** - Discover popular search terms
-5. **Audience Research** - Understand regional preferences
-
-## Documentation
-
-See [SKILL.md](SKILL.md) for complete API documentation.
+1. Open `SKILL.md` to review invocation guidance and runtime requirements.
+2. Set any required environment variables before running bundled scripts.
+3. Use repo-relative paths like `python3 scripts/...` when following command examples.

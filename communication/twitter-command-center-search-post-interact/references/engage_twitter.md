@@ -1,4 +1,4 @@
-# OpenClaw Twitter Engagement
+# Twitter Engagement
 
 **Like, unlike, follow, and unfollow X/Twitter content through the local relay service.**
 
@@ -64,7 +64,7 @@ When the user asks to like, unlike, follow, or unfollow on X/Twitter:
 1. Do not ask the user for tweet IDs, tweet links, or user IDs.
 2. If the user specifies a direct account such as `@elonmusk`, call the `--user` based command.
 3. If the user asks for the latest tweet, use `like-latest` or `unlike-latest`.
-4. If the user first asked to query tweets, keep the returned `tweets[]` structure in OpenClaw context.
+4. If the user first asked to query tweets, keep the returned `tweets[]` structure in the current conversation context.
 5. For follow-up instructions like `Like the second one`, map the ordinal to the remembered `tweets[].index`, then call `like-tweet` or `unlike-tweet` with the resolved `tweet_id`.
 6. For follow-up instructions like `Follow this author`, use the remembered tweet author's `author_id`, then call `follow-user-id` or `unfollow-user-id`.
 7. If multiple user candidates match a natural-language name, stop and ask the user to confirm the account.
@@ -76,6 +76,6 @@ When the user asks to like, unlike, follow, or unfollow on X/Twitter:
 - Do not ask the user to manually paste tweet links or IDs.
 - Do not guess a target account when multiple candidates are returned.
 - Do not fabricate tweet IDs or user IDs from natural language.
-- Do not use local file-based conversation memory for this workflow; rely on OpenClaw context only.
+- Do not use local file-based conversation memory for this workflow; rely on the current conversation context only.
 - Do not claim the action succeeded unless the relay request actually returns success.
 - Relay endpoints for this workflow are `/like_twitter`, `/unlike_twitter`, `/follow_twitter`, and `/unfollow_twitter`.

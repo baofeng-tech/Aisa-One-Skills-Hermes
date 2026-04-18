@@ -1,30 +1,19 @@
-# Prediction Market
+# AIsa Prediction Market Data
 
-Get current odds, prices, and market data from prediction markets like Polymarket and Kalshi. Access historical orderbook data, candlestick charts, trade history, wallet positions, and more.
+Release-ready Hermes skill package generated from `targetSkills/prediction-market`.
 
-## Features
+- Skill name: `aisa-prediction-market-data`
+- Entry point: `SKILL.md`
+- Runtime assets: `scripts/`, `references/`, `assets/` when present
 
-- **Polymarket**: Search markets, live prices, trade history, orderbooks, candlesticks, wallet positions, P&L
-- **Kalshi**: Search markets, live prices, trade history, orderbooks
-- **Cross-Platform**: Match equivalent sports markets across Polymarket and Kalshi
+## Notes
+
+- Prediction markets data - Polymarket, Kalshi markets, prices, positions, and trades. Use when: the user needs market data, stock analysis, watchlists, or portfolio workflows.
+- This README is release-specific and replaces source READMEs that were written for other runtimes.
+- If the underlying instructions mention OpenClaw, treat that as source-context or compatibility guidance unless the skill is specifically about OpenClaw setup.
 
 ## Quick Start
 
-```bash
-export AISA_API_KEY="your-key"
-
-# Search Polymarket for election markets
-python scripts/prediction_market_client.py polymarket markets --search "election" --status open
-
-# Get current price for a Polymarket token
-python scripts/prediction_market_client.py polymarket price <token_id>
-
-# Search Kalshi for Fed rate markets
-python scripts/prediction_market_client.py kalshi markets --search "fed rate"
-
-# Get current price for a Kalshi market
-python scripts/prediction_market_client.py kalshi price <market_ticker>
-
-# Find matching NBA markets across platforms
-python scripts/prediction_market_client.py sports by-date nba --date 2025-03-01
-```
+1. Open `SKILL.md` to review invocation guidance and runtime requirements.
+2. Set any required environment variables before running bundled scripts.
+3. Use repo-relative paths like `python3 scripts/...` when following command examples.
