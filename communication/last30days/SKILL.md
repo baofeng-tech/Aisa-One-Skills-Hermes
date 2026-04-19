@@ -1,6 +1,6 @@
 ---
 name: last30days
-description: 'Research the last 30 days across Reddit, X/Twitter, YouTube, TikTok, Instagram, Hacker News, Polymarket, GitHub, and web search. Use when: you need recent social research, company updates, person profiles, competitor comparisons, launch reactions, or trend scans. Supports AISA-powered planning, clustering, reranking, and JSON output.'
+description: 'Research the last 30 days across Reddit, X/Twitter, YouTube, TikTok, Instagram, Hacker News, Polymarket, and web search. Use when: you need recent social research, company updates, person profiles, competitor comparisons, launch reactions, or trend scans. Supports AISA-powered planning, clustering, reranking, and JSON output.'
 license: MIT
 metadata:
   aisa:
@@ -38,7 +38,7 @@ required_environment_variables:
 
 # last30days
 
-Research the last 30 days across Reddit, X/Twitter, YouTube, TikTok, Instagram, Hacker News, Polymarket, GitHub, and web search. Use when: you need recent social research, company updates, person profiles, competitor comparisons, launch reactions, or trend scans. Supports AISA-powered planning, clustering, reranking, and JSON output.
+Research the last 30 days across Reddit, X/Twitter, YouTube, TikTok, Instagram, Hacker News, Polymarket, and web search. Use when: you need recent social research, company updates, person profiles, competitor comparisons, launch reactions, or trend scans. Supports AISA-powered planning, clustering, reranking, and JSON output.
 
 ## When to Use
 
@@ -55,8 +55,7 @@ Research the last 30 days across Reddit, X/Twitter, YouTube, TikTok, Instagram, 
 ## Quick Reference
 
 - `bash scripts/run-last30days.sh --help`
-- `bash scripts/run-watchlist.sh --help`
-- `bash scripts/run-briefing.sh --help`
+- `python3 scripts/last30days.py --help`
 
 ## Verification
 

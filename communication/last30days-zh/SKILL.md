@@ -1,6 +1,6 @@
 ---
 name: last30days-zh
-description: 聚合最近 30 天的 Reddit、X/Twitter、YouTube、TikTok、Instagram、Hacker News、Polymarket、GitHub 和 web search 结果。触发条件：当用户需要 recent social research、人物近况、公司动态、竞品对比、发布反应、趋势扫描时使用。支持 AISA 规划、聚类、重排和 JSON 输出。
+description: 聚合最近 30 天的 Reddit、X/Twitter、YouTube、TikTok、Instagram、Hacker News、Polymarket 和 web search 结果。触发条件：当用户需要 recent social research、人物近况、公司动态、竞品对比、发布反应、趋势扫描时使用。支持 AISA 规划、聚类、重排和 JSON 输出。
 license: MIT
 metadata:
   aisa:
@@ -38,7 +38,7 @@ required_environment_variables:
 
 # last30days-zh
 
-聚合最近 30 天的 Reddit、X/Twitter、YouTube、TikTok、Instagram、Hacker News、Polymarket、GitHub 和 web search 结果。触发条件：当用户需要 recent social research、人物近况、公司动态、竞品对比、发布反应、趋势扫描时使用。支持 AISA 规划、聚类、重排和 JSON 输出。
+聚合最近 30 天的 Reddit、X/Twitter、YouTube、TikTok、Instagram、Hacker News、Polymarket 和 web search 结果。触发条件：当用户需要 recent social research、人物近况、公司动态、竞品对比、发布反应、趋势扫描时使用。支持 AISA 规划、聚类、重排和 JSON 输出。
 
 ## When to Use
 
@@ -55,8 +55,7 @@ required_environment_variables:
 ## Quick Reference
 
 - `bash scripts/run-last30days.sh --help`
-- `bash scripts/run-watchlist.sh --help`
-- `bash scripts/run-briefing.sh --help`
+- `python3 scripts/last30days.py --help`
 
 ## Verification
 

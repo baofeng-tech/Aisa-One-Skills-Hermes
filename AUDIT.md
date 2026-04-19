@@ -98,24 +98,16 @@
 
 - Category: `communication`
 - Path: `hermes-release/communication/last30days`
-- Description: Research the last 30 days across Reddit, X/Twitter, YouTube, TikTok, Instagram, Hacker News, Polymarket, GitHub, and web search. Use when: you need recent social research, company updates, person profiles, competitor comparisons, launch reactions, or trend scans. Supports AISA-powered planning, clustering, reranking, and JSON output.
+- Description: Research the last 30 days across Reddit, X/Twitter, YouTube, TikTok, Instagram, Hacker News, Polymarket, and web search. Use when: you need recent social research, company updates, person profiles, competitor comparisons, launch reactions, or trend scans. Supports AISA-powered planning, clustering, reranking, and JSON output.
 - Change: removed 1 non-runtime generated/test files from the release bundle
-- Change: switched default local storage to repo-local path in scripts/lib/env.py
-- Change: updated config path messaging in scripts/lib/ui.py
-- Change: patched Hermes runtime auth and storage defaults in scripts/lib/env.py
-- Change: patched Hermes runtime auth and storage defaults in scripts/lib/ui.py
 - Change: replaced source README with a Hermes-oriented release README
 
 ## last30days-zh
 
 - Category: `communication`
 - Path: `hermes-release/communication/last30days-zh`
-- Description: 聚合最近 30 天的 Reddit、X/Twitter、YouTube、TikTok、Instagram、Hacker News、Polymarket、GitHub 和 web search 结果。触发条件：当用户需要 recent social research、人物近况、公司动态、竞品对比、发布反应、趋势扫描时使用。支持 AISA 规划、聚类、重排和 JSON 输出。
+- Description: 聚合最近 30 天的 Reddit、X/Twitter、YouTube、TikTok、Instagram、Hacker News、Polymarket 和 web search 结果。触发条件：当用户需要 recent social research、人物近况、公司动态、竞品对比、发布反应、趋势扫描时使用。支持 AISA 规划、聚类、重排和 JSON 输出。
 - Change: removed 1 non-runtime generated/test files from the release bundle
-- Change: switched default local storage to repo-local path in scripts/lib/env.py
-- Change: updated config path messaging in scripts/lib/ui.py
-- Change: patched Hermes runtime auth and storage defaults in scripts/lib/env.py
-- Change: patched Hermes runtime auth and storage defaults in scripts/lib/ui.py
 - Change: replaced source README with a Hermes-oriented release README
 
 ## llm-router
