@@ -88,7 +88,7 @@ def expand_reddit_queries(topic: str, depth: str) -> List[str]:
     core = _extract_core_subject(topic)
     queries = [core]
 
-    # Broader variant: include more context from original topic
+    # Alternate variant: keep the original wording when it is still concise.
     original_clean = topic.strip().rstrip('?!.')
     if core.lower() != original_clean.lower() and len(original_clean.split()) <= 8:
         queries.append(original_clean)

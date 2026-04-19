@@ -38,9 +38,9 @@ def _check_file_permissions(path: Path) -> None:
 
 def load_env_file(path: Path) -> dict[str, str]:
     """Load environment variables from a file."""
-    env = {}
+    values: dict[str, str] = {}
     if not path or not path.exists():
-        return env
+        return values
     _check_file_permissions(path)
 
     with open(path, 'r') as f:
@@ -56,8 +56,8 @@ def load_env_file(path: Path) -> dict[str, str]:
                 if value and value[0] in ('"', "'") and value[-1] == value[0]:
                     value = value[1:-1]
                 if key and value:
-                    env[key] = value
-    return env
+                    values[key] = value
+    return values
 
 def get_config(
     *,
