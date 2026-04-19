@@ -202,7 +202,7 @@ BIRD_AUTH_HELP = f"""
 {Colors.YELLOW}Legacy X authentication failed.{Colors.RESET}
 
 Recommended fix:
-1. Add AISA_API_KEY to ./.claude-skill-data/last30days/.env or .claude/last30days.env
+1. Add AISA_API_KEY to ./.hermes-skill-data/last30days/.env or .claude/last30days.env
 2. Re-run to use the hosted AISA Twitter proxy
 """
 
@@ -210,7 +210,7 @@ BIRD_AUTH_HELP_PLAIN = """
 Legacy X authentication failed.
 
 Recommended fix:
-1. Add AISA_API_KEY to ./.claude-skill-data/last30days/.env or .claude/last30days.env
+1. Add AISA_API_KEY to ./.hermes-skill-data/last30days/.env or .claude/last30days.env
 2. Re-run to use the hosted AISA Twitter proxy
 """
 
@@ -543,7 +543,7 @@ def show_diagnostic_banner(diag: dict):
             lines.append(f"{Colors.DIM}│{Colors.RESET}  {Colors.YELLOW}⚡ Web{Colors.RESET}       — Add AISA_API_KEY                  {Colors.DIM}│{Colors.RESET}")
 
         lines.append(f"{Colors.DIM}│{Colors.RESET}                                                     {Colors.DIM}│{Colors.RESET}")
-        lines.append(f"{Colors.DIM}│{Colors.RESET}  Config: {Colors.BOLD}./.claude-skill-data/last30days/.env{Colors.RESET}                  {Colors.DIM}│{Colors.RESET}")
+        lines.append(f"{Colors.DIM}│{Colors.RESET}  Config: {Colors.BOLD}./.hermes-skill-data/last30days/.env{Colors.RESET}                  {Colors.DIM}│{Colors.RESET}")
         lines.append(f"{Colors.DIM}└─────────────────────────────────────────────────────┘{Colors.RESET}")
     else:
         # Plain text for non-TTY (Claude Code / Codex)
@@ -578,7 +578,7 @@ def show_diagnostic_banner(diag: dict):
             lines.append("│  ⚡ Web       — Add AISA_API_KEY                    │")
 
         lines.append("│                                                     │")
-        lines.append("│  Config: ./.claude-skill-data/last30days/.env                  │")
+        lines.append("│  Config: ./.hermes-skill-data/last30days/.env                  │")
         lines.append("└─────────────────────────────────────────────────────┘")
 
     sys.stderr.write("\n".join(lines) + "\n\n")

@@ -12,12 +12,9 @@ import json
 import subprocess
 import sys
 import time
+import urllib.error
+import urllib.request
 from pathlib import Path
-
-try:
-    import requests
-except ImportError:
-    requests = None
 
 SCRIPT_DIR = Path(__file__).parent.resolve()
 sys.path.insert(0, str(SCRIPT_DIR))
@@ -62,34 +59,38 @@ def _format_delivery_message(topic: str, counts: dict, mode: str) -> str:
 
 def _send_slack_webhook(url: str, text: str) -> None:
     """POST to Slack incoming webhook."""
-    if not requests:
-        raise RuntimeError("requests library not available for webhook delivery")
-    
-    response = requests.post(
-        url,
-        json={"text": text},
-        headers={"Content-Type": "application/json"},
-        timeout=10,
-    )
-    response.raise_for_status()
+    _post_json(url, {"text": text})
 
 
 def _send_generic_webhook(url: str, text: str) -> None:
     """POST JSON payload to generic webhook."""
-    if not requests:
-        raise RuntimeError("requests library not available for webhook delivery")
-    
-    response = requests.post(
+    _post_json(
         url,
-        json={
+        {
             "message": text,
             "source": "last30days",
             "timestamp": time.time(),
         },
-        headers={"Content-Type": "application/json"},
-        timeout=10,
     )
-    response.raise_for_status()
+
+
+def _post_json(url: str, payload: dict) -> None:
+    """使用标准库发送 JSON webhook。"""
+    data = json.dumps(payload).encode("utf-8")
+    request = urllib.request.Request(
+        url,
+        data=data,
+        headers={"Content-Type": "application/json"},
+        method="POST",
+    )
+    try:
+        with urllib.request.urlopen(request, timeout=10) as response:
+            response.read()
+    except urllib.error.HTTPError as exc:
+        body = exc.read().decode("utf-8", errors="replace")
+        raise RuntimeError(f"webhook 返回 HTTP {exc.code}: {body[:200]}") from exc
+    except urllib.error.URLError as exc:
+        raise RuntimeError(f"webhook 请求失败: {exc.reason}") from exc
 
 
 # --- Command Handlers ---

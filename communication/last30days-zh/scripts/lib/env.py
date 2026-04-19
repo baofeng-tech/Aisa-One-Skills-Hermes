@@ -19,7 +19,7 @@ elif _config_override:
     CONFIG_DIR = Path(_config_override)
     CONFIG_FILE = CONFIG_DIR / ".env"
 else:
-    CONFIG_DIR = Path.cwd() / ".claude-skill-data" / "last30days"
+    CONFIG_DIR = Path.cwd() / ".hermes-skill-data" / "last30days"
     CONFIG_FILE = CONFIG_DIR / ".env"
 
 def _check_file_permissions(path: Path) -> None:
