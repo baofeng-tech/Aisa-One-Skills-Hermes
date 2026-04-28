@@ -38,7 +38,7 @@
       "name": "aisa-twitter-api",
       "category": "communication",
       "path": "hermes-release/communication/aisa-twitter-api",
-      "description": "Search X/Twitter profiles, tweets, trends, lists, communities, and Spaces through the AIsa relay, then support approved posting workflows with OAuth. Use when the user asks for Twitter research, monitoring, or posting without sharing passwords.",
+      "description": "Twitter/X command center for research, monitoring, watchlists, and approved posting through AIsa. Use when: the user needs one flagship skill for trend tracking, competitor monitoring, or publish-ready Twitter workflows without sharing passwords. Supports search, watchlists, and OAuth-gated posting.",
       "residual_risks": [],
       "changes": [
         "disabled browser auto-open in scripts/twitter_oauth_client.py",
@@ -106,7 +106,7 @@
       "name": "aisa-youtube-serp-scout",
       "category": "research",
       "path": "hermes-release/research/aisa-youtube-serp-scout",
-      "description": "Search YouTube videos, channels, and trends through the AIsa YouTube SERP client. Use when the user asks for content research, competitor tracking, or trend discovery without managing Google credentials.",
+      "description": "Search YouTube videos, channels, and trends through the AIsa YouTube SERP client. Use when the user asks for content research, competitor tracking, or trend discovery without managing Google credentials. Use when: the user needs YouTube search, trend discovery, channel research, or SERP analysis.",
       "residual_risks": [],
       "changes": [
         "patched Hermes runtime auth and storage defaults in scripts/youtube_client.py",
@@ -125,13 +125,28 @@
       ]
     },
     {
-      "name": "last30days",
-      "category": "communication",
-      "path": "hermes-release/communication/last30days",
-      "description": "Research the last 30 days across Reddit, X/Twitter, YouTube, TikTok, Instagram, Hacker News, Polymarket, and web search. Use when: you need recent social research, company updates, person profiles, competitor comparisons, launch reactions, or trend scans. Supports AISA-powered planning, clustering, reranking, and JSON output.",
+      "name": "crypto-market-data",
+      "category": "finance",
+      "path": "hermes-release/finance/crypto-market-data",
+      "description": "Query real-time and historical cryptocurrency market data via CoinGecko — simple prices, coin details, historical charts, OHLC candles, token prices by contract address, market-cap rankings, exchange data and tickers, categories, trending searches, and crypto news. Use for crypto research, price tracking, on-chain token lookup, portfolio analysis, and market-cap screening. Use when: the user needs market data, stock analysis, watchlists, or portfolio workflows.",
       "residual_risks": [],
       "changes": [
-        "removed 1 non-runtime generated/test files from the release bundle",
+        "patched Hermes runtime auth and storage defaults in scripts/coingecko_client.py",
+        "replaced source README with a Hermes-oriented release README"
+      ]
+    },
+    {
+      "name": "last30days",
+      "category": "research",
+      "path": "hermes-release/research/last30days",
+      "description": "Research the last 30 days across Reddit, X, YouTube, TikTok, Instagram, Hacker News, Polymarket, GitHub, and grounded web search. Returns a ranked, clustered brief with citations. Use when the task needs recent social evidence, competitor comparisons, launch reactions, trend scans, or person/company profiles.",
+      "residual_risks": [],
+      "changes": [
+        "removed 2 non-runtime generated/test files from the release bundle",
+        "switched default local storage to repo-local path in scripts/lib/env.py",
+        "updated config path messaging in scripts/lib/ui.py",
+        "patched Hermes runtime auth and storage defaults in scripts/lib/env.py",
+        "patched Hermes runtime auth and storage defaults in scripts/lib/ui.py",
         "replaced source README with a Hermes-oriented release README"
       ]
     },
@@ -139,10 +154,10 @@
       "name": "last30days-zh",
       "category": "communication",
       "path": "hermes-release/communication/last30days-zh",
-      "description": "聚合最近 30 天的 Reddit、X/Twitter、YouTube、TikTok、Instagram、Hacker News、Polymarket 和 web search 结果。触发条件：当用户需要 recent social research、人物近况、公司动态、竞品对比、发布反应、趋势扫描时使用。支持 AISA 规划、聚类、重排和 JSON 输出。",
+      "description": "聚合最近 30 天的 Reddit、X/Twitter、YouTube、TikTok、Instagram、Hacker News、Polymarket 和 web search 结果. Use when: the user needs recent multi-source research across the last 30 days.",
       "residual_risks": [],
       "changes": [
-        "removed 1 non-runtime generated/test files from the release bundle",
+        "removed 2 non-runtime generated/test files from the release bundle",
         "replaced source README with a Hermes-oriented release README"
       ]
     },
@@ -172,7 +187,7 @@
       "name": "marketpulse",
       "category": "finance",
       "path": "hermes-release/finance/marketpulse",
-      "description": "Query real-time and historical financial data across equities and crypto—prices, market moves, metrics, and trends for analysis, alerts, and reporting. Use when: the user needs market data, stock analysis, watchlists, or portfolio workflows.",
+      "description": "Query real-time and historical financial data for equities—prices, news, financial statements, metrics, analyst estimates, insider and institutional activity, SEC filings, earnings press releases, segmented revenues, stock screening, and macro interest rates. Use when: the user needs market data, stock analysis, watchlists, or portfolio workflows.",
       "residual_risks": [],
       "changes": [
         "patched Hermes runtime auth and storage defaults in scripts/market_client.py",
@@ -183,7 +198,7 @@
       "name": "media-gen",
       "category": "creative",
       "path": "hermes-release/creative/media-gen",
-      "description": "Generate images & videos with AIsa. Gemini 3 Pro Image (image) + Qwen Wan 2.6 (video) via one API key. Use when: the user needs AI image or video generation workflows.",
+      "description": "Generate images and videos with AIsa. Four image models (Google Gemini 3 Pro Image, Alibaba Wan 2.7 image + image-pro, ByteDance Seedream) and four Wan video variants (wan2.6/2.7 × t2v/i2v). One API key; the client routes each model to the correct endpoint automatically. Use when: the user needs AI image or video generation workflows.",
       "residual_risks": [],
       "changes": [
         "patched Hermes runtime auth and storage defaults in scripts/media_gen_client.py",
@@ -202,10 +217,21 @@
       ]
     },
     {
+      "name": "multi-source-search",
+      "category": "research",
+      "path": "hermes-release/research/multi-source-search",
+      "description": "Confidence-scored multi-source retrieval across web, scholar, Tavily, and Perplexity-backed research. Use when: the user needs cross-source verification, consensus checks, or one report that compares multiple search surfaces. Supports parallel retrieval, confidence scoring, and synthesis-ready outputs.",
+      "residual_risks": [],
+      "changes": [
+        "patched Hermes runtime auth and storage defaults in scripts/search_client.py",
+        "replaced source README with a Hermes-oriented release README"
+      ]
+    },
+    {
       "name": "openclaw-aisa-youtube-aisa",
       "category": "research",
       "path": "hermes-release/research/openclaw-aisa-youtube-aisa",
-      "description": "Search YouTube videos, channels, and trends through the AISA YouTube SERP client. Use when: the user asks for content research, competitor tracking, or trend discovery without managing Google credentials. Supports curl queries and the bundled Python client with locale and filter controls.",
+      "description": "Search YouTube videos, channels, and trends through the AISA YouTube SERP client. Use when: the user needs YouTube search, trend discovery, channel research, or SERP analysis.",
       "residual_risks": [],
       "changes": [
         "patched Hermes runtime auth and storage defaults in scripts/youtube_client.py",
@@ -216,7 +242,7 @@
       "name": "openclaw-media-gen",
       "category": "creative",
       "path": "hermes-release/creative/openclaw-media-gen",
-      "description": "Generate images & videos with AIsa. Gemini 3 Pro Image (image) + Qwen Wan 2.6 (video) via one API key. Use when: the user needs AI image or video generation workflows.",
+      "description": "Generate images and videos with AIsa. Four image models (Google Gemini 3 Pro Image, Alibaba Wan 2.7 image + image-pro, ByteDance Seedream) and four Wan video variants (wan2.6/2.7 × t2v/i2v). One API key; the client routes each model to the correct endpoint automatically. Use when: the user needs AI image or video generation workflows.",
       "residual_risks": [],
       "changes": [
         "patched Hermes runtime auth and storage defaults in scripts/media_gen_client.py",
@@ -347,7 +373,7 @@
       "name": "prediction-market-data",
       "category": "finance",
       "path": "hermes-release/finance/prediction-market-data",
-      "description": "Cross-platform prediction market data via AIsa API. Query Polymarket and Kalshi markets, prices, orderbooks, candlesticks, positions, and trades. Use when user asks about: prediction market odds, election betting, event probabilities, market sentiment, Polymarket prices, Kalshi prices, sports betting odds, wallet PnL, or cross-platform market comparison.",
+      "description": "Prediction markets data - Polymarket, Kalshi markets, prices, positions, and trades. Use when: the user needs market data, stock analysis, watchlists, or portfolio workflows.",
       "residual_risks": [],
       "changes": [
         "patched Hermes runtime auth and storage defaults in scripts/prediction_market_client.py",
@@ -380,7 +406,7 @@
       "name": "search",
       "category": "research",
       "path": "hermes-release/research/search",
-      "description": "Intelligent search for agents. Multi-source retrieval across web, scholar, Tavily, and Perplexity Sonar models. Use when: the user needs web search, research, source discovery, or content extraction.",
+      "description": "Search command center for web, academic, Tavily, and Perplexity-backed research through one AIsa API key. Use when: the user needs one flagship skill for live search, source discovery, or citation-ready research. Supports fast lookup, answer generation, and deep research reports.",
       "residual_risks": [],
       "changes": [
         "patched Hermes runtime auth and storage defaults in scripts/search_client.py",
@@ -507,7 +533,7 @@
       "name": "twitter-autopilot",
       "category": "communication",
       "path": "hermes-release/communication/twitter-autopilot",
-      "description": "Search and read X (Twitter) data via AIsa API: user profiles, timelines, mentions, followers, tweet search, trends, lists, communities, and Spaces. Publish posts, like/unlike tweets, and follow/unfollow users through OAuth relay — no passwords or cookies needed. Use when asked about Twitter/X data, social listening, influencer monitoring, trending topics, competitor intel, posting to X, or engaging with tweets.",
+      "description": "Searches and reads X (Twitter): profiles, timelines, mentions, followers, tweet search, trends, lists, communities, and Spaces. Publishes posts, likes/unlikes tweets, and follows/unfollows users after the user completes OAuth in the browser. Use when the user asks about Twitter/X data, social listening, posting, or interacting with tweets/users without sharing account passwords.",
       "residual_risks": [],
       "changes": [
         "disabled browser auto-open in scripts/twitter_oauth_client.py",
@@ -600,9 +626,20 @@
       "name": "youtube-search",
       "category": "communication",
       "path": "hermes-release/communication/youtube-search",
-      "description": "YouTube Search API via AIsa unified endpoint. Search YouTube videos, channels, and playlists with a single AIsa API key — no Google API key or OAuth required. Use this skill when users want to search YouTube content. For other AIsa capabilities (LLM, financial data, Twitter, web search), see the aisa-core skill. Use when: the user needs X/Twitter research, monitoring, posting, or engagement workflows.",
+      "description": "YouTube Search API via AIsa unified endpoint. Search YouTube videos, channels, and playlists with a single AIsa API key — no Google API key or OAuth required. Use this skill when users want to search YouTube content. For other AIsa capabilities (LLM, financial data, Twitter, web search), see the aisa-core skill. Use when: the user needs YouTube search, trend discovery, channel research, or SERP analysis.",
       "residual_risks": [],
       "changes": [
+        "replaced source README with a Hermes-oriented release README"
+      ]
+    },
+    {
+      "name": "youtube-serp",
+      "category": "research",
+      "path": "hermes-release/research/youtube-serp",
+      "description": "YouTube SERP for agents. Search top-ranking videos, channels, and trends for content research and competitor tracking. Use when: the user needs YouTube search, trend discovery, channel research, or SERP analysis.",
+      "residual_risks": [],
+      "changes": [
+        "patched Hermes runtime auth and storage defaults in scripts/youtube_client.py",
         "replaced source README with a Hermes-oriented release README"
       ]
     }

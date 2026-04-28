@@ -1,6 +1,7 @@
 ---
 name: aisa-twitter-command-center
 description: Search X/Twitter profiles, tweets, trends, lists, communities, and Spaces through the AIsa relay, then support approved posting workflows with OAuth. Use when the user asks for Twitter research, monitoring, or posting without sharing passwords.
+version: 1.0.3
 license: Apache-2.0
 metadata:
   aisa:

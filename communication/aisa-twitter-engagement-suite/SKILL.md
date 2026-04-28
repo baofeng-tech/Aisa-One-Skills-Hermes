@@ -1,6 +1,7 @@
 ---
 name: aisa-twitter-engagement-suite
 description: Search X/Twitter profiles, tweets, trends, and approved engagement actions through the AIsa relay. Use when the user asks for Twitter/X research, posting, likes, follows, or related workflows without sharing passwords.
+version: 1.0.3
 license: MIT-0
 metadata:
   aisa:

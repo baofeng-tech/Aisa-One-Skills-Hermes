@@ -1,7 +1,7 @@
 ---
-name: aisa-market
+name: market
 description: 'Query real-time and historical financial data across equities and crypto—prices, market moves, metrics, and trends for analysis, alerts, and reporting. Use when: the user needs market data, stock analysis, watchlists, or portfolio workflows.'
-homepage: https://aisa.one
+version: 1.0.1
 metadata:
   aisa:
     emoji: 🛠
@@ -20,9 +20,7 @@ metadata:
     - finance
     - market
     - stock
-    - aisa
     related_skills:
-    - market
     - prediction-market
 required_environment_variables:
 - name: AISA_API_KEY

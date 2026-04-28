@@ -1,7 +1,7 @@
 ---
-name: aisa-search
-description: 'Intelligent search for agents. Multi-source retrieval across web, scholar, Tavily, and Perplexity Sonar models. Use when: the user needs web search, research, source discovery, or content extraction.'
-homepage: https://aisa.one
+name: search
+description: 'Search command center for web, academic, Tavily, and Perplexity-backed research through one AIsa API key. Use when: the user needs one flagship skill for live search, source discovery, or citation-ready research. Supports fast lookup, answer generation, and deep research reports.'
+version: 1.0.1
 metadata:
   aisa:
     emoji: 🛠
@@ -22,7 +22,6 @@ metadata:
     - search
     - aisa
     related_skills:
-    - search
     - aisa-multi-search-engine
 required_environment_variables:
 - name: AISA_API_KEY
@@ -33,7 +32,7 @@ required_environment_variables:
 
 # search
 
-Intelligent search for agents. Multi-source retrieval across web, scholar, Tavily, and Perplexity Sonar models. Use when: the user needs web search, research, source discovery, or content extraction.
+Search command center for web, academic, Tavily, and Perplexity-backed research through one AIsa API key. Use when: the user needs one flagship skill for live search, source discovery, or citation-ready research. Supports fast lookup, answer generation, and deep research reports.
 
 ## When to Use
 

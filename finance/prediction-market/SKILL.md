@@ -1,7 +1,7 @@
 ---
-name: aisa-prediction-market-data
+name: prediction-market
 description: 'Prediction markets data - Polymarket, Kalshi markets, prices, positions, and trades. Use when: the user needs market data, stock analysis, watchlists, or portfolio workflows.'
-homepage: https://aisa.one
+version: 1.0.1
 metadata:
   aisa:
     emoji: 🛠
@@ -21,10 +21,8 @@ metadata:
     - market
     - stock
     - prediction
-    - aisa
     related_skills:
     - market
-    - prediction-market
 required_environment_variables:
 - name: AISA_API_KEY
   prompt: AIsa API key
