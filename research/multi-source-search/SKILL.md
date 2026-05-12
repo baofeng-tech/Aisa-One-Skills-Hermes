@@ -1,7 +1,6 @@
 ---
 name: multi-source-search
-description: 'Confidence-scored multi-source retrieval across web, scholar, Tavily, and Perplexity-backed research. Use when: the user needs cross-source verification, consensus checks, or one report that compares multiple search surfaces. Supports parallel retrieval, confidence scoring, and synthesis-ready outputs.'
-version: 1.0.1
+description: Multi-source search for agents across web, scholar, Tavily, and Perplexity Sonar endpoints. Use when you need structured retrieval, citation-backed answers, or broad research coverage from one AIsa API key.
 license: MIT
 metadata:
   aisa:
@@ -21,6 +20,7 @@ metadata:
     - research
     - x
     - search
+    - aisa
     related_skills:
     - search
     - aisa-multi-search-engine
@@ -33,7 +33,7 @@ required_environment_variables:
 
 # multi-source-search
 
-Confidence-scored multi-source retrieval across web, scholar, Tavily, and Perplexity-backed research. Use when: the user needs cross-source verification, consensus checks, or one report that compares multiple search surfaces. Supports parallel retrieval, confidence scoring, and synthesis-ready outputs.
+Multi-source search for agents across web, scholar, Tavily, and Perplexity Sonar endpoints. Use when you need structured retrieval, citation-backed answers, or broad research coverage from one AIsa API key.
 
 ## When to Use
 

@@ -1,6 +1,6 @@
 ---
 name: twitter-autopilot
-description: 'Searches and reads X (Twitter): profiles, timelines, mentions, followers, tweet search, trends, lists, communities, and Spaces. Publishes posts, likes/unlikes tweets, and follows/unfollows users after the user completes OAuth in the browser. Use when the user asks about Twitter/X data, social listening, posting, or interacting with tweets/users without sharing account passwords.'
+description: 'Searches and reads X (Twitter): profiles, timelines, mentions, followers, tweet search, trends, lists, communities, and Spaces. Publishes posts, likes/unlikes tweets, and follows/unfollows users after the user completes OAuth in the browser. Use when the user asks for Twitter/X research, social listening, posting, or account interactions without sharing account passwords.'
 license: MIT
 metadata:
   aisa:
@@ -21,6 +21,7 @@ metadata:
     - twitter
     - x
     - search
+    - research
     related_skills:
     - aisa-twitter-command-center
     - aisa-twitter-post-engage
@@ -33,7 +34,7 @@ required_environment_variables:
 
 # twitter-autopilot
 
-Searches and reads X (Twitter): profiles, timelines, mentions, followers, tweet search, trends, lists, communities, and Spaces. Publishes posts, likes/unlikes tweets, and follows/unfollows users after the user completes OAuth in the browser. Use when the user asks about Twitter/X data, social listening, posting, or interacting with tweets/users without sharing account passwords.
+Searches and reads X (Twitter): profiles, timelines, mentions, followers, tweet search, trends, lists, communities, and Spaces. Publishes posts, likes/unlikes tweets, and follows/unfollows users after the user completes OAuth in the browser. Use when the user asks for Twitter/X research, social listening, posting, or account interactions without sharing account passwords.
 
 ## When to Use
 

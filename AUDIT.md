@@ -29,11 +29,11 @@
 
 - Category: `communication`
 - Path: `hermes-release/communication/aisa-twitter-api`
-- Description: Twitter/X command center for research, monitoring, watchlists, and approved posting through AIsa. Use when: the user needs one flagship skill for trend tracking, competitor monitoring, or publish-ready Twitter workflows without sharing passwords. Supports search, watchlists, and OAuth-gated posting.
+- Description: Twitter/X research, monitoring, watchlists, and OAuth-approved posting through AIsa. Use when: the user needs one flagship Twitter skill for trend tracking, competitor monitoring, timeline analysis, or approved posting without sharing passwords. Supports search, watchlists, relay-based reads, and OAuth-gated text or media posting.
 - Change: disabled browser auto-open in scripts/twitter_oauth_client.py
 - Change: removed non-runtime documentation directories from the Hermes release bundle
-- Change: patched Hermes runtime auth and storage defaults in scripts/twitter_client.py
 - Change: patched Hermes runtime auth and storage defaults in scripts/twitter_oauth_client.py
+- Change: patched Hermes runtime auth and storage defaults in scripts/twitter_client.py
 - Change: replaced source README with a Hermes-oriented release README
 
 ## aisa-twitter-command-center
@@ -43,8 +43,8 @@
 - Description: Search X/Twitter profiles, tweets, trends, lists, communities, and Spaces through the AIsa relay, then support approved posting workflows with OAuth. Use when the user asks for Twitter research, monitoring, or posting without sharing passwords.
 - Change: disabled browser auto-open in scripts/twitter_oauth_client.py
 - Change: removed non-runtime documentation directories from the Hermes release bundle
-- Change: patched Hermes runtime auth and storage defaults in scripts/twitter_client.py
 - Change: patched Hermes runtime auth and storage defaults in scripts/twitter_oauth_client.py
+- Change: patched Hermes runtime auth and storage defaults in scripts/twitter_client.py
 - Change: replaced source README with a Hermes-oriented release README
 
 ## aisa-twitter-engagement-suite
@@ -54,9 +54,9 @@
 - Description: Search X/Twitter profiles, tweets, trends, and approved engagement actions through the AIsa relay. Use when the user asks for Twitter/X research, posting, likes, follows, or related workflows without sharing passwords.
 - Change: disabled browser auto-open in scripts/twitter_oauth_client.py
 - Change: removed non-runtime documentation directories from the Hermes release bundle
-- Change: patched Hermes runtime auth and storage defaults in scripts/twitter_client.py
-- Change: patched Hermes runtime auth and storage defaults in scripts/twitter_engagement_client.py
 - Change: patched Hermes runtime auth and storage defaults in scripts/twitter_oauth_client.py
+- Change: patched Hermes runtime auth and storage defaults in scripts/twitter_engagement_client.py
+- Change: patched Hermes runtime auth and storage defaults in scripts/twitter_client.py
 - Change: replaced source README with a Hermes-oriented release README
 
 ## aisa-twitter-post-engage
@@ -66,9 +66,9 @@
 - Description: Search X/Twitter profiles, tweets, trends, and approved engagement actions through the AIsa relay. Use when the user asks for Twitter/X research, posting, likes, follows, or related workflows without sharing passwords.
 - Change: disabled browser auto-open in scripts/twitter_oauth_client.py
 - Change: removed non-runtime documentation directories from the Hermes release bundle
-- Change: patched Hermes runtime auth and storage defaults in scripts/twitter_client.py
-- Change: patched Hermes runtime auth and storage defaults in scripts/twitter_engagement_client.py
 - Change: patched Hermes runtime auth and storage defaults in scripts/twitter_oauth_client.py
+- Change: patched Hermes runtime auth and storage defaults in scripts/twitter_engagement_client.py
+- Change: patched Hermes runtime auth and storage defaults in scripts/twitter_client.py
 - Change: replaced source README with a Hermes-oriented release README
 
 ## aisa-youtube-search
@@ -98,7 +98,7 @@
 
 - Category: `finance`
 - Path: `hermes-release/finance/crypto-market-data`
-- Description: Query real-time and historical cryptocurrency market data via CoinGecko — simple prices, coin details, historical charts, OHLC candles, token prices by contract address, market-cap rankings, exchange data and tickers, categories, trending searches, and crypto news. Use for crypto research, price tracking, on-chain token lookup, portfolio analysis, and market-cap screening. Use when: the user needs market data, stock analysis, watchlists, or portfolio workflows.
+- Description: Query real-time and historical cryptocurrency market data via CoinGecko through AIsa — simple prices, coin details, historical charts, OHLC candles, token prices by contract address, market-cap rankings, exchange data and tickers, categories, trending searches, and crypto news. Use when you need crypto market research, price tracking, token lookup, portfolio analysis, or market-cap screening. Use when: the user needs market data, stock analysis, dividend research, or read-only financial data workflows.
 - Change: patched Hermes runtime auth and storage defaults in scripts/coingecko_client.py
 - Change: replaced source README with a Hermes-oriented release README
 
@@ -110,8 +110,8 @@
 - Change: removed 2 non-runtime generated/test files from the release bundle
 - Change: switched default local storage to repo-local path in scripts/lib/env.py
 - Change: updated config path messaging in scripts/lib/ui.py
-- Change: patched Hermes runtime auth and storage defaults in scripts/lib/env.py
 - Change: patched Hermes runtime auth and storage defaults in scripts/lib/ui.py
+- Change: patched Hermes runtime auth and storage defaults in scripts/lib/env.py
 - Change: replaced source README with a Hermes-oriented release README
 
 ## last30days-zh
@@ -142,7 +142,7 @@
 
 - Category: `finance`
 - Path: `hermes-release/finance/marketpulse`
-- Description: Query real-time and historical financial data for equities—prices, news, financial statements, metrics, analyst estimates, insider and institutional activity, SEC filings, earnings press releases, segmented revenues, stock screening, and macro interest rates. Use when: the user needs market data, stock analysis, watchlists, or portfolio workflows.
+- Description: Query real-time and historical equity market data—prices, news, financial statements, metrics, analyst estimates, insider and institutional activity, SEC filings, earnings press releases, segmented revenues, stock screening, and macro interest rates. Use when you need broad public-market research from a single AIsa-backed skill. Use when: the user needs market data, stock analysis, dividend research, or read-only financial data workflows.
 - Change: patched Hermes runtime auth and storage defaults in scripts/market_client.py
 - Change: replaced source README with a Hermes-oriented release README
 
@@ -150,7 +150,7 @@
 
 - Category: `creative`
 - Path: `hermes-release/creative/media-gen`
-- Description: Generate images and videos with AIsa. Four image models (Google Gemini 3 Pro Image, Alibaba Wan 2.7 image + image-pro, ByteDance Seedream) and four Wan video variants (wan2.6/2.7 × t2v/i2v). One API key; the client routes each model to the correct endpoint automatically. Use when: the user needs AI image or video generation workflows.
+- Description: Generate images and videos with AIsa. Supports Gemini, Wan, and Seedream image generation plus Wan text-to-video and image-to-video models. One API key; the bundled client routes each model to the correct endpoint automatically. Use when: you need a neutral AIsa media-generation skill that spans multiple model families without changing credentials or request flow.
 - Change: patched Hermes runtime auth and storage defaults in scripts/media_gen_client.py
 - Change: replaced source README with a Hermes-oriented release README
 
@@ -166,7 +166,7 @@
 
 - Category: `research`
 - Path: `hermes-release/research/multi-source-search`
-- Description: Confidence-scored multi-source retrieval across web, scholar, Tavily, and Perplexity-backed research. Use when: the user needs cross-source verification, consensus checks, or one report that compares multiple search surfaces. Supports parallel retrieval, confidence scoring, and synthesis-ready outputs.
+- Description: Multi-source search for agents across web, scholar, Tavily, and Perplexity Sonar endpoints. Use when you need structured retrieval, citation-backed answers, or broad research coverage from one AIsa API key.
 - Change: patched Hermes runtime auth and storage defaults in scripts/search_client.py
 - Change: replaced source README with a Hermes-oriented release README
 
@@ -201,8 +201,8 @@
 - Description: Search X/Twitter profiles, tweets, trends, lists, communities, and Spaces through the AISA relay, then publish approved posts with OAuth. Use when: the user asks for Twitter/X research, monitoring, or posting without sharing passwords. Supports read APIs, authorization links, and media-aware posting.
 - Change: disabled browser auto-open in scripts/twitter_oauth_client.py
 - Change: removed non-runtime documentation directories from the Hermes release bundle
-- Change: patched Hermes runtime auth and storage defaults in scripts/twitter_client.py
 - Change: patched Hermes runtime auth and storage defaults in scripts/twitter_oauth_client.py
+- Change: patched Hermes runtime auth and storage defaults in scripts/twitter_client.py
 - Change: replaced source README with a Hermes-oriented release README
 
 ## openclaw-twitter-post-engage
@@ -212,9 +212,9 @@
 - Description: Search X/Twitter profiles, tweets, trends, and approved engagement actions through the AISA relay. Use when: the user asks for Twitter/X research, posting, likes, follows, or related workflows without sharing passwords. Supports read APIs, OAuth-gated posting, and follow or like operations.
 - Change: disabled browser auto-open in scripts/twitter_oauth_client.py
 - Change: removed non-runtime documentation directories from the Hermes release bundle
-- Change: patched Hermes runtime auth and storage defaults in scripts/twitter_client.py
-- Change: patched Hermes runtime auth and storage defaults in scripts/twitter_engagement_client.py
 - Change: patched Hermes runtime auth and storage defaults in scripts/twitter_oauth_client.py
+- Change: patched Hermes runtime auth and storage defaults in scripts/twitter_engagement_client.py
+- Change: patched Hermes runtime auth and storage defaults in scripts/twitter_client.py
 - Change: replaced source README with a Hermes-oriented release README
 
 ## openclaw-youtube
@@ -253,9 +253,9 @@
 
 - Category: `finance`
 - Path: `hermes-release/finance/prediction-market-arbitrage`
-- Description: Find and analyze arbitrage opportunities across prediction markets like Polymarket and Kalshi. Use when: the user needs market data, stock analysis, watchlists, or portfolio workflows.
-- Change: patched Hermes runtime auth and storage defaults in scripts/arbitrage_finder.py
+- Description: Find and analyze arbitrage opportunities across prediction markets like Polymarket and Kalshi. Use when you need to match equivalent markets, compare prices, and verify whether a spread looks actionable.
 - Change: patched Hermes runtime auth and storage defaults in scripts/prediction_market_client.py
+- Change: patched Hermes runtime auth and storage defaults in scripts/arbitrage_finder.py
 - Change: replaced source README with a Hermes-oriented release README
 
 ## prediction-market-arbitrage-api
@@ -263,8 +263,8 @@
 - Category: `finance`
 - Path: `hermes-release/finance/prediction-market-arbitrage-api`
 - Description: Find arbitrage opportunities across Polymarket and Kalshi prediction markets via AIsa API. Scan sports markets for cross-platform price discrepancies, compare real-time odds, verify orderbook liquidity. Use when user asks about: prediction market arbitrage, cross-platform price differences, sports betting arbitrage, odds comparison, risk-free profit, market inefficiencies.
-- Change: patched Hermes runtime auth and storage defaults in scripts/arbitrage_finder.py
 - Change: patched Hermes runtime auth and storage defaults in scripts/prediction_market_client.py
+- Change: patched Hermes runtime auth and storage defaults in scripts/arbitrage_finder.py
 - Change: replaced source README with a Hermes-oriented release README
 
 ## prediction-market-arbitrage-zh
@@ -272,15 +272,15 @@
 - Category: `finance`
 - Path: `hermes-release/finance/prediction-market-arbitrage-zh`
 - Description: 通过 AIsa API 发现 Polymarket 和 Kalshi 预测市场的套利机会。扫描体育市场跨平台价差、比较实时赔率、验证订单簿流动性。适用场景：预测市场套利、跨平台价差、体育博彩套利、赔率对比、无风险利润、市场低效。 Use when: the user needs market data, stock analysis, watchlists, or portfolio workflows.
-- Change: patched Hermes runtime auth and storage defaults in scripts/arbitrage_finder.py
 - Change: patched Hermes runtime auth and storage defaults in scripts/prediction_market_client.py
+- Change: patched Hermes runtime auth and storage defaults in scripts/arbitrage_finder.py
 - Change: replaced source README with a Hermes-oriented release README
 
 ## prediction-market-data
 
 - Category: `finance`
 - Path: `hermes-release/finance/prediction-market-data`
-- Description: Prediction markets data - Polymarket, Kalshi markets, prices, positions, and trades. Use when: the user needs market data, stock analysis, watchlists, or portfolio workflows.
+- Description: Access prediction market data from Polymarket and Kalshi, including markets, prices, trades, orderbooks, positions, and cross-platform market matching. Use when you need current odds, historical market data, or wallet-level prediction market analysis.
 - Change: patched Hermes runtime auth and storage defaults in scripts/prediction_market_client.py
 - Change: replaced source README with a Hermes-oriented release README
 
@@ -328,7 +328,7 @@
 
 - Category: `finance`
 - Path: `hermes-release/finance/stock-dividend`
-- Description: Analyze dividend metrics for stocks via AIsa API. Provides yield, payout ratio, growth CAGR, safety score (0-100), income rating, and Dividend Aristocrat/King status. Use when the user asks about dividends, income investing, or dividend safety.
+- Description: Analyze read-only dividend metrics for stocks via AIsa API. Provides yield, payout ratio, growth CAGR, safety score, income rating, and Dividend Aristocrat/King status without placing trades, making purchases, or managing brokerage accounts. Use when: the user needs market data, stock analysis, dividend research, or read-only financial data workflows.
 - Change: patched Hermes runtime auth and storage defaults in scripts/dividends.py
 - Change: replaced source README with a Hermes-oriented release README
 
@@ -362,8 +362,6 @@
 - Category: `finance`
 - Path: `hermes-release/finance/stock-watchlist`
 - Description: Manage a stock/crypto watchlist with price target and stop-loss alerts via AIsa API. Add, remove, list, and check tickers with live price alerts. Use when the user wants to track stocks, set price alerts, manage a watchlist, or check triggered alerts.
-- Change: switched default local storage to repo-local path in scripts/watchlist.py
-- Change: patched Hermes runtime auth and storage defaults in scripts/watchlist.py
 - Change: replaced source README with a Hermes-oriented release README
 
 ## tavily-extract
@@ -389,21 +387,21 @@
 - Description: Searches and reads X (Twitter): profiles, timelines, mentions, followers, tweet search, trends, lists, communities, and Spaces. Publishes posts, likes/unlikes tweets, and follows/unfollows users after the user completes OAuth in the browser. Use when the user asks about Twitter/X data, social listening, posting, or interacting with tweets/users without sharing account passwords.
 - Change: disabled browser auto-open in scripts/twitter_oauth_client.py
 - Change: removed non-runtime documentation directories from the Hermes release bundle
-- Change: patched Hermes runtime auth and storage defaults in scripts/twitter_client.py
-- Change: patched Hermes runtime auth and storage defaults in scripts/twitter_engagement_client.py
 - Change: patched Hermes runtime auth and storage defaults in scripts/twitter_oauth_client.py
+- Change: patched Hermes runtime auth and storage defaults in scripts/twitter_engagement_client.py
+- Change: patched Hermes runtime auth and storage defaults in scripts/twitter_client.py
 - Change: replaced source README with a Hermes-oriented release README
 
 ## twitter-autopilot
 
 - Category: `communication`
 - Path: `hermes-release/communication/twitter-autopilot`
-- Description: Searches and reads X (Twitter): profiles, timelines, mentions, followers, tweet search, trends, lists, communities, and Spaces. Publishes posts, likes/unlikes tweets, and follows/unfollows users after the user completes OAuth in the browser. Use when the user asks about Twitter/X data, social listening, posting, or interacting with tweets/users without sharing account passwords.
+- Description: Searches and reads X (Twitter): profiles, timelines, mentions, followers, tweet search, trends, lists, communities, and Spaces. Publishes posts, likes/unlikes tweets, and follows/unfollows users after the user completes OAuth in the browser. Use when the user asks for Twitter/X research, social listening, posting, or account interactions without sharing account passwords.
 - Change: disabled browser auto-open in scripts/twitter_oauth_client.py
 - Change: removed non-runtime documentation directories from the Hermes release bundle
-- Change: patched Hermes runtime auth and storage defaults in scripts/twitter_client.py
-- Change: patched Hermes runtime auth and storage defaults in scripts/twitter_engagement_client.py
 - Change: patched Hermes runtime auth and storage defaults in scripts/twitter_oauth_client.py
+- Change: patched Hermes runtime auth and storage defaults in scripts/twitter_engagement_client.py
+- Change: patched Hermes runtime auth and storage defaults in scripts/twitter_client.py
 - Change: replaced source README with a Hermes-oriented release README
 
 ## twitter-command-center-search-post
@@ -413,8 +411,8 @@
 - Description: Searches and reads X (Twitter): profiles, timelines, mentions, followers, tweet search, trends, lists, communities, and Spaces. Publishes posts after the user completes OAuth in the browser. Use when the user asks about Twitter/X data, social listening, or posting without sharing account passwords.
 - Change: disabled browser auto-open in scripts/twitter_oauth_client.py
 - Change: removed non-runtime documentation directories from the Hermes release bundle
-- Change: patched Hermes runtime auth and storage defaults in scripts/twitter_client.py
 - Change: patched Hermes runtime auth and storage defaults in scripts/twitter_oauth_client.py
+- Change: patched Hermes runtime auth and storage defaults in scripts/twitter_client.py
 - Change: replaced source README with a Hermes-oriented release README
 
 ## twitter-command-center-search-post-interact
@@ -424,9 +422,9 @@
 - Description: Searches and reads X (Twitter): profiles, timelines, mentions, followers, tweet search, trends, lists, communities, and Spaces. Publishes posts, likes/unlikes tweets, and follows/unfollows users after the user completes OAuth in the browser. Use when the user asks about Twitter/X data, social listening, posting, or interacting with tweets/users without sharing account passwords.
 - Change: disabled browser auto-open in scripts/twitter_oauth_client.py
 - Change: removed non-runtime documentation directories from the Hermes release bundle
-- Change: patched Hermes runtime auth and storage defaults in scripts/twitter_client.py
-- Change: patched Hermes runtime auth and storage defaults in scripts/twitter_engagement_client.py
 - Change: patched Hermes runtime auth and storage defaults in scripts/twitter_oauth_client.py
+- Change: patched Hermes runtime auth and storage defaults in scripts/twitter_engagement_client.py
+- Change: patched Hermes runtime auth and storage defaults in scripts/twitter_client.py
 - Change: replaced source README with a Hermes-oriented release README
 
 ## us-stock-analyst
@@ -434,8 +432,8 @@
 - Category: `finance`
 - Path: `hermes-release/finance/us-stock-analyst`
 - Description: Professional US stock analysis with financial data, news, social sentiment, and multi-model AI. Comprehensive reports at $0.02-0.10 per analysis. Use when: the user needs market data, stock analysis, watchlists, or portfolio workflows.
-- Change: patched Hermes runtime auth and storage defaults in scripts/stock_analyst.py
 - Change: patched Hermes runtime auth and storage defaults in scripts/test_api_data.py
+- Change: patched Hermes runtime auth and storage defaults in scripts/stock_analyst.py
 - Change: replaced source README with a Hermes-oriented release README
 
 ## web-search
@@ -453,9 +451,9 @@
 - Description: Search X/Twitter profiles, tweets, trends, and approved engagement actions through the AIsa relay. Use when the user asks for Twitter/X research, posting, likes, follows, or related workflows without sharing passwords.
 - Change: disabled browser auto-open in scripts/twitter_oauth_client.py
 - Change: removed non-runtime documentation directories from the Hermes release bundle
-- Change: patched Hermes runtime auth and storage defaults in scripts/twitter_client.py
-- Change: patched Hermes runtime auth and storage defaults in scripts/twitter_engagement_client.py
 - Change: patched Hermes runtime auth and storage defaults in scripts/twitter_oauth_client.py
+- Change: patched Hermes runtime auth and storage defaults in scripts/twitter_engagement_client.py
+- Change: patched Hermes runtime auth and storage defaults in scripts/twitter_client.py
 - Change: replaced source README with a Hermes-oriented release README
 
 ## youtube
@@ -477,6 +475,6 @@
 
 - Category: `research`
 - Path: `hermes-release/research/youtube-serp`
-- Description: YouTube SERP for agents. Search top-ranking videos, channels, and trends for content research and competitor tracking. Use when: the user needs YouTube search, trend discovery, channel research, or SERP analysis.
+- Description: Search YouTube SERP results through AISA for video research, channel discovery, trend checking, and competitor tracking. Use when: you need ranked YouTube results for a query, optionally filtered by country or language.
 - Change: patched Hermes runtime auth and storage defaults in scripts/youtube_client.py
 - Change: replaced source README with a Hermes-oriented release README

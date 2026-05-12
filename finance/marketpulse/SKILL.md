@@ -1,7 +1,6 @@
 ---
 name: marketpulse
-description: 'Query real-time and historical financial data for equities—prices, news, financial statements, metrics, analyst estimates, insider and institutional activity, SEC filings, earnings press releases, segmented revenues, stock screening, and macro interest rates. Use when: the user needs market data, stock analysis, watchlists, or portfolio workflows.'
-version: 1.0.2
+description: 'Query real-time and historical equity market data—prices, news, financial statements, metrics, analyst estimates, insider and institutional activity, SEC filings, earnings press releases, segmented revenues, stock screening, and macro interest rates. Use when you need broad public-market research from a single AIsa-backed skill. Use when: the user needs market data, stock analysis, dividend research, or read-only financial data workflows.'
 license: MIT
 metadata:
   aisa:
@@ -19,8 +18,11 @@ metadata:
   hermes:
     tags:
     - finance
+    - search
+    - research
     - market
     - stock
+    - aisa
     related_skills:
     - market
     - prediction-market
@@ -33,7 +35,7 @@ required_environment_variables:
 
 # marketpulse
 
-Query real-time and historical financial data for equities—prices, news, financial statements, metrics, analyst estimates, insider and institutional activity, SEC filings, earnings press releases, segmented revenues, stock screening, and macro interest rates. Use when: the user needs market data, stock analysis, watchlists, or portfolio workflows.
+Query real-time and historical equity market data—prices, news, financial statements, metrics, analyst estimates, insider and institutional activity, SEC filings, earnings press releases, segmented revenues, stock screening, and macro interest rates. Use when you need broad public-market research from a single AIsa-backed skill. Use when: the user needs market data, stock analysis, dividend research, or read-only financial data workflows.
 
 ## When to Use
 

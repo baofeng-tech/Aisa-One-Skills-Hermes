@@ -8,7 +8,7 @@ Release-ready Hermes skill package generated from `targetSkills/multi-source-sea
 
 ## Notes
 
-- Confidence-scored multi-source retrieval across web, scholar, Tavily, and Perplexity-backed research. Use when: the user needs cross-source verification, consensus checks, or one report that compares multiple search surfaces. Supports parallel retrieval, confidence scoring, and synthesis-ready outputs.
+- Multi-source search for agents across web, scholar, Tavily, and Perplexity Sonar endpoints. Use when you need structured retrieval, citation-backed answers, or broad research coverage from one AIsa API key.
 - This README is release-specific and replaces source READMEs that were written for other runtimes.
 - If the underlying instructions mention OpenClaw, treat that as source-context or compatibility guidance unless the skill is specifically about OpenClaw setup.
 
